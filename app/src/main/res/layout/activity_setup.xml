@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    tools:context="id.hisyam.travblog.SetupActivity">
+
+    <ImageButton
+        android:id="@+id/setupImageBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:background="#00ffffff"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/default_image" />
+
+    <EditText
+        android:id="@+id/setupNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setupImageBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Masukkan Profil Nama ..."
+        android:inputType="textPersonName"
+        android:paddingTop="20dp" />
+
+    <Button
+        android:id="@+id/setupSubmitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/cardview_light_background"
+        android:text="Simpan setup" />
+</RelativeLayout>
